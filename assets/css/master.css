@@ -1,0 +1,90 @@
+.wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  color: #fff;
+  margin: 0;
+  padding: 17px 8px;
+  padding-top: 12px;
+  position: fixed;
+  top: 0;
+  font-family: 'Sintony', serif;
+}
+
+i.fa.fa-graduation-cap {
+  font-size: 21px;
+  line-height: 1.0;
+}
+
+.navbar {
+  display: flex;
+  align-items: baseline;
+  font-weight: 500;
+}
+
+.navbar ul {
+  flex: 1;
+  list-style: none;
+  marign: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar .brand > i{
+  margin-left: 6px;
+  color: #fff;
+}
+
+.navbar li {
+  text-align: center;
+  flex-basis: 60px;
+  font-size: 13px;
+  line-height: normal;
+}
+
+.navbar li > a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar li > a::after {
+   content: '';
+   display: block;
+   margin-top:2px;
+   width: 0;
+   height: 3px;
+   background: #fff;
+   transition: width .3s;
+}
+
+.navbar li > a:hover::after {
+  width: 100%;
+}
+
+.bg {
+  background-image: url('/assets/pics/bg2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  color: #fff;
+}
+
+.headroom {
+    will-change: transform;
+    transition: transform .3s linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+.center-title {
+  margin: auto;
+  font-family: 'Sintony';
+  text-shadow: -1px 1px 3px rgba(0,0,0,0.2);
+  text-align: center;
+}
