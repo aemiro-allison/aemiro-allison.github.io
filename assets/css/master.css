@@ -7,7 +7,7 @@
   padding-top: 12px;
   position: fixed;
   top: 0;
-  font-family: 'Sintony', serif;
+  font-family: 'Open Sans', serif;
 }
 
 i.fa.fa-graduation-cap {
@@ -18,7 +18,7 @@ i.fa.fa-graduation-cap {
 .navbar {
   display: flex;
   align-items: baseline;
-  font-weight: 500;
+  color: rgba(255,255,255,1);
 }
 
 .navbar ul {
@@ -27,24 +27,31 @@ i.fa.fa-graduation-cap {
   marign: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-end;
+  /*justify-content: flex-end;*/
 }
 
 .navbar .brand > i{
   margin-left: 6px;
   color: #fff;
 }
+.navbar li:first-of-type {
+  margin-left: auto;
+}
 
 .navbar li {
-  text-align: center;
-  flex-basis: 60px;
-  font-size: 13px;
-  line-height: normal;
+  text-align: right;
+  color:#fff;
+  margin-right: 1.5%;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
 }
 
 .navbar li > a {
   text-decoration: none;
   display: inline-block;
+  font-size: 0.8rem;
+  color: #fff;
 }
 
 .navbar li > a::after {
@@ -57,12 +64,12 @@ i.fa.fa-graduation-cap {
    transition: width .3s;
 }
 
-.navbar li > a:hover::after {
+.navbar li > a:active::after, .navbar li > a:hover::after {
   width: 100%;
 }
 
 .bg {
-  background-image: url('/assets/pics/bg2.jpg');
+  background-image: url("https://images.unsplash.com/photo-1473520844623-167ad716dcae?dpr=1.125&auto=format&fit=crop&w=1080&h=720&q=80&cs=tinysrgb&crop=");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -84,7 +91,40 @@ i.fa.fa-graduation-cap {
 
 .center-title {
   margin: auto;
-  font-family: 'Sintony';
-  text-shadow: -1px 1px 3px rgba(0,0,0,0.2);
+  color: #fff;
+  font-family: 'Didact Gothic', 'Sintony';
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3), -1px 1px 2px rgba(0,0,0,0.3);
   text-align: center;
+  padding-bottom: 70px;
+}
+
+small {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.container {
+  max-width: 800px;
+  margin:10% auto;
+  padding:0 12px;
+}
+
+h2 {
+  font-family: 'Dancing Script';
+}
+
+h4 {
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+
+div > a {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+  font-family: inherit;
+  font-style: italic;
+}
+
+body {
+   font-size: 18px;
 }

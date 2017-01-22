@@ -89,10 +89,11 @@
 })( window, document );
 
 // Instantiate Plugin
-new flowtype('#root',{
+new flowtype('body',{
  minimum   : 500,
  maximum   : 1200,
- minFont   : 13,
- maxFont   : 30,
- fontRatio : 35
+ minFont   : 16,
+ maxFont   : 25,
+ fontRatio : 30,
+ lineRatio : 1.15
 });
