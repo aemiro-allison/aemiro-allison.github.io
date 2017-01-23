@@ -10,6 +10,14 @@
   font-family: 'Open Sans', serif;
 }
 
+.black-color {
+  color: #000;
+}
+
+.white-color {
+  color: #fff;
+}
+
 i.fa.fa-graduation-cap {
   font-size: 21px;
   line-height: 1.0;
@@ -18,7 +26,7 @@ i.fa.fa-graduation-cap {
 .navbar {
   display: flex;
   align-items: baseline;
-  color: rgba(255,255,255,1);
+  -webkit-font-smoothing: antialiased;
 }
 
 .navbar ul {
@@ -27,12 +35,10 @@ i.fa.fa-graduation-cap {
   marign: 0;
   padding: 0;
   display: flex;
-  /*justify-content: flex-end;*/
 }
 
 .navbar .brand > i{
   margin-left: 6px;
-  color: #fff;
 }
 .navbar li:first-of-type {
   margin-left: auto;
@@ -40,18 +46,15 @@ i.fa.fa-graduation-cap {
 
 .navbar li {
   text-align: right;
-  color:#fff;
   margin-right: 1.5%;
   letter-spacing: 1px;
   line-height: 1.2;
-  -webkit-font-smoothing: antialiased;
 }
 
 .navbar li > a {
   text-decoration: none;
   display: inline-block;
   font-size: 0.8rem;
-  color: #fff;
 }
 
 .navbar li > a::after {
@@ -60,7 +63,8 @@ i.fa.fa-graduation-cap {
    margin-top:2px;
    width: 0;
    height: 3px;
-   background: #fff;
+   background: #000;
+   box-sizing: border-box;
    transition: width .3s;
 }
 
@@ -69,13 +73,12 @@ i.fa.fa-graduation-cap {
 }
 
 .bg {
-  background-image: url("https://images.unsplash.com/photo-1473520844623-167ad716dcae?dpr=1.125&auto=format&fit=crop&w=1080&h=720&q=80&cs=tinysrgb&crop=");
+  background-image: url("https://images.unsplash.com/photo-1441311956160-78a471e0638d?dpr=1.125&auto=format&fit=crop&w=1080&h=720&q=80&cs=tinysrgb&crop=");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   display: flex;
-  color: #fff;
 }
 
 .headroom {
@@ -91,25 +94,38 @@ i.fa.fa-graduation-cap {
 
 .center-title {
   margin: auto;
-  color: #fff;
-  font-family: 'Didact Gothic', 'Sintony';
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.3), -1px 1px 2px rgba(0,0,0,0.3);
+  font-family:  'Didact Gothic';
   text-align: center;
   padding-bottom: 70px;
+  color: #fff;
 }
 
 small {
   color: rgba(255, 255, 255, 0.8);
 }
 
+h1 {
+  font-family: 'Didact Gothic';
+  margin-top: 0px;
+  text-align: center;
+}
+
 .container {
   max-width: 800px;
-  margin:10% auto;
+  margin:5% auto;
   padding:0 12px;
 }
 
-h2 {
-  font-family: 'Dancing Script';
+.page {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: 0px;
+  padding-top: 100px;
+  box-sizing: border-box;
+  height: 700px;
 }
 
 h4 {
@@ -119,12 +135,37 @@ h4 {
 
 
 div > a {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: rgba(255,255,255,0.8);
-  font-family: inherit;
+  font-family: serif;
   font-style: italic;
 }
 
 body {
    font-size: 18px;
+}
+
+.example-enter {
+  opacity: 0.01;
+  transform: translate3d(0, 100%, 0);
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transform: none;
+}
+
+.example-leave {
+  opacity: 1;
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.example-leave.example-leave-active {
+  opacity: 0;
+  transform: translate3d(0, 100%, 0);
+}
+
+.page-title {
+  margin: 5% 0 12% 0;
 }

@@ -21,16 +21,13 @@
       /*pass window height (w/o scroll bars) down to react app, note can't use vh becasue that
       includes scroll bars and mobile browser footer, etc so doesn't give viewable area*/
       html, body { height: 100%; }
-      html { background-color: rgb(0, 120, 0); }
+      html { background-color: #fff; }
       #root { background-color: #fff; min-height: 100%; }
 
       /*required for IE/Edge to be compatible with left:50vw & transform:translate(-50%, 0),
       otherwise there is a phantom div on the right side of the screen (from the left:50vw),
       that the window will scroll to. Note the left:50vw and transform is used to center content
       horizaontally based on vw to prevent content jump when vertical scroll bar show/hide.*/
-      body {
-        -webkit-font-smoothing: anti-aliased;
-      }
     </style>
 
     <link rel="stylesheet" href="assets/css/master.css">
