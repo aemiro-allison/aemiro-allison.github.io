@@ -6,16 +6,62 @@
   padding: 17px 8px;
   padding-top: 12px;
   position: fixed;
+  z-index: 1;
   top: 0;
   font-family: 'Open Sans', serif;
 }
 
+.black {
+  color: #000;
+}
+
+.white {
+  color: #fff;
+}
+
 .black-color {
   color: #000;
+  -webkit-font-smoothing: none;
+  transition: color .3s ease-in;
+}
+
+.black-color::after {
+   content: '';
+   display: block;
+   margin-top:2px;
+   width: 0;
+   height: 3px;
+   background: #000;
+   box-sizing: border-box;
+   transition: width .3s ease-in-out;
+}
+
+.black-color:hover {
+  /*color: rgb(181, 5, 254);*/
+  color: rgb(238, 61, 127);
+}
+
+.black-color:hover::after {
+  width: 100%;
 }
 
 .white-color {
   color: #fff;
+}
+
+.white-color::after {
+   content: '';
+   display: block;
+   margin-top:2px;
+   width: 0;
+   height: 3px;
+   background: #fff;
+   box-sizing: border-box;
+   transition: width .3s ease-in-out;
+}
+
+.white-color:hover::after {
+  width: 100%;
 }
 
 i.fa.fa-graduation-cap {
@@ -46,7 +92,7 @@ i.fa.fa-graduation-cap {
 
 .navbar li {
   text-align: right;
-  margin-right: 1.5%;
+  margin-right: 2%;
   letter-spacing: 1px;
   line-height: 1.2;
 }
@@ -55,21 +101,6 @@ i.fa.fa-graduation-cap {
   text-decoration: none;
   display: inline-block;
   font-size: 0.8rem;
-}
-
-.navbar li > a::after {
-   content: '';
-   display: block;
-   margin-top:2px;
-   width: 0;
-   height: 3px;
-   background: #000;
-   box-sizing: border-box;
-   transition: width .3s;
-}
-
-.navbar li > a:active::after, .navbar li > a:hover::after {
-  width: 100%;
 }
 
 .bg {
@@ -96,7 +127,7 @@ i.fa.fa-graduation-cap {
   margin: auto;
   font-family:  'Didact Gothic';
   text-align: center;
-  padding-bottom: 70px;
+  padding-bottom: 20px;
   color: #fff;
 }
 
@@ -112,25 +143,30 @@ h1 {
 
 .container {
   max-width: 800px;
-  margin:5% auto;
+  margin:5% auto 20% auto;
   padding:0 12px;
 }
 
 .page {
-  position: absolute;
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
   margin-top: 0px;
-  padding-top: 100px;
+  padding-top: 8%;
   box-sizing: border-box;
-  height: 700px;
+  height: auto;
 }
 
 h4 {
   font-weight: 100;
   margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.2;
 }
 
 
@@ -167,5 +203,49 @@ body {
 }
 
 .page-title {
-  margin: 5% 0 12% 0;
+  margin: 40px 0 12% 0;
+  font-size: 2em;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  color: rgba(0,0,0,0.8);
+  margin: 5% auto;
+  max-width: 800px;
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+p {
+  font-size: 1em;
+}
+
+section {
+  width: 50%;
+  padding: 0 2.5%;
+  box-sizing: border-box;
+}
+
+section p, footer p {
+  font-size: 1rem;
+}
+
+.footer-made-by {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+section h4 {
+  font-family: 'Open Sans';
+  margin:15px 0;
+  font-size: 0.9rem;
+  color: rgba(238, 61, 127,0.7);
 }
