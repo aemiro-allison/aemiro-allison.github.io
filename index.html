@@ -29,7 +29,7 @@
       that the window will scroll to. Note the left:50vw and transform is used to center content
       horizaontally based on vw to prevent content jump when vertical scroll bar show/hide.*/
     </style>
-
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/master.css">
 
     <!-- Start Single Page Apps for GitHub Pages -->
@@ -68,10 +68,13 @@
     <div id="root"></div>
     <!-- single page app in bundle.js -->
     <script src="build/bundle.js"></script>
-    <script src="assets/js/flowtype.js"></script>
-    <script src="https://npmcdn.com/headroom.js@0.9.3/dist/headroom.min.js"></script>
-    <script type="text/javascript">
-      var headroom = new Headroom(document.querySelector("header"));
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/headroom.min.js"></script>
+    <script>
+      // grab an element
+      var myElement = document.querySelector(".wrapper");
+      // construct an instance of Headroom, passing the element
+      var headroom  = new Headroom(myElement);
+      // initialise
       headroom.init();
     </script>
   </body>
