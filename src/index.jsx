@@ -1,21 +1,34 @@
 import React from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import reactDOM from 'react-dom';
-import { Router, Route, IndexRoute, hashHistory } from 'react-router';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Header from './components/Header';
+import Footer from './components/Footer';
+import Projects from './pages/Projects';
 import pageNotFound from './pages/pageNotFound';
 
 // eslint-disable-next-line react/prop-types
-const App = ({ children }) => (
+const App = ({ children, location }) => (
   <div>
-    <Header />
-    {children}
+    <Header pathName={location.pathname} />
+    <ReactCSSTransitionGroup
+      component="div"
+      transitionName="example"
+      transitionEnterTimeout={1000}
+      transitionLeaveTimeout={1000}
+      transitionAppearTimeout={1000}
+    >
+      {React.cloneElement(children, {
+        key: location.pathname,
+      })}
+    </ReactCSSTransitionGroup>
+    <Footer />
   </div>
 );
-
 
 const routes = (
   <Route path="/" mapMenuTitle="Home" component={App}>
@@ -23,6 +36,7 @@ const routes = (
 
     <Route path="/about" mapMenuTitle="About" component={About} />
     <Route path="/contact" mapMenuTitle="Contact" component={Contact} />
+    <Route path="/projects" mapMenuTitle="Projects" component={Projects} />
 
     <Route path="*" mapMenuTitle="Page Not Found" component={pageNotFound} />
   </Route>
@@ -31,7 +45,7 @@ const routes = (
 
 reactDOM.render(
   <Router
-    history={hashHistory}
+    history={browserHistory}
     routes={routes}
   />,
   document.getElementById('root'),

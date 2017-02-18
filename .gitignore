@@ -1,6 +1,6 @@
 # Dependency directory
 node_modules
-
+npm-debug.log
 # Source maps
 *.js.map
 
