@@ -9,7 +9,7 @@ const Home = () => (
         <h1>Hi, I&#39;m Aemiro</h1>
         <h4>I like to code cool things</h4>
         <Link to="/about">read more</Link>
-          <div><img alt="meaning text" src="http://www1.nyc.gov/assets/home/images/content/home/program-nyc-lightgreen.png" className="rounded-img" /></div>
+        <div><img alt="meaning text" src="http://www1.nyc.gov/assets/home/images/content/home/program-nyc-lightgreen.png" className="rounded-img" /></div>
       </div>
     </div>
     <div className="container page">
