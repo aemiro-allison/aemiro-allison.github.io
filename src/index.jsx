@@ -17,7 +17,7 @@ const App = ({ children, location }) => (
     <Header pathName={location.pathname} />
     <ReactCSSTransitionGroup
       component="div"
-      transitionName="example"
+      transitionName="page"
       transitionEnterTimeout={1000}
       transitionLeaveTimeout={1000}
       transitionAppearTimeout={1000}
@@ -45,6 +45,7 @@ const routes = (
 
 reactDOM.render(
   <Router
+    onUpdate={() => window.scrollTo(0, 0)}
     history={browserHistory}
     routes={routes}
   />,

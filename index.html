@@ -4,34 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aemiro Allison | Portfolio </title>
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans|Didact+Gothic" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-      html, body, div, span, a, p, ul, li, code, nav {
-        margin: 0;
-        border: 0;
-        padding: 0;
-        box-sizing: inherit;
-        font: inherit;
-        text-decoration: inherit;
-        text-align: inherit;
-        color: inherit;
-        background: transparent;
-      }
-      /*pass window height (w/o scroll bars) down to react app, note can't use vh becasue that
-      includes scroll bars and mobile browser footer, etc so doesn't give viewable area*/
-      html, body { height: 100%; }
-      html { background-color: #fff; }
-      #root { background-color: #fff; min-height: 100%; }
-
-      /*required for IE/Edge to be compatible with left:50vw & transform:translate(-50%, 0),
-      otherwise there is a phantom div on the right side of the screen (from the left:50vw),
-      that the window will scroll to. Note the left:50vw and transform is used to center content
-      horizaontally based on vw to prevent content jump when vertical scroll bar show/hide.*/
-    </style>
-    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Didact+Gothic" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/master.css">
-
     <!-- Start Single Page Apps for GitHub Pages -->
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
@@ -71,7 +45,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/headroom.min.js"></script>
     <script>
       // grab an element
-      var myElement = document.querySelector(".wrapper");
+      var myElement = document.querySelector(".headroom");
       // construct an instance of Headroom, passing the element
       var headroom  = new Headroom(myElement);
       // initialise
