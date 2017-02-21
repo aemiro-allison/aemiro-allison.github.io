@@ -11,7 +11,7 @@ const iconStyle = {
 };
 
 const quoteNameStyle = {
-  color: 'rgba(255,255,255,0.3)',
+  color: 'rgba(255,255,255,0.4)',
   fontStyle: 'italic',
 };
 
@@ -28,15 +28,17 @@ const Footer = () => (
         <h4>My Philosophy</h4>
         <blockquote>
           &#34;The end of the day is going to come whether you like it or not. So the question is,
-           Where do you want to be at the end of the day?&#34;
+           Where do you want to be at by end of the day?&#34;
            <span style={quoteNameStyle}>- Aemiro Allison</span>
         </blockquote>
       </section>
       <section>
         <h4>Contact</h4>
-        <GitHub style={iconStyle} />
-        <LinkedIn style={iconStyle} />
-        <Email style={iconStyle} />
+        <div>
+          <GitHub style={iconStyle} />
+          <LinkedIn style={iconStyle} />
+          <Email style={iconStyle} />
+        </div>
       </section>
     </div>
     <div className="footer-made-by">

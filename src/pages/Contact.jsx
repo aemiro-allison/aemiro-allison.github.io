@@ -1,30 +1,33 @@
 import React from 'react';
+import GitHub from 'react-icons/lib/fa/github';
+import LinkedIn from 'react-icons/lib/fa/linkedin-square';
+import Email from 'react-icons/lib/md/email';
+
+const iconStyle = {
+  fontSize: 100,
+  color: 'yellow',
+};
 
 const Contact = () => (
   <section className="page">
-    <div className="container">
+    <div className="container-fluid">
       <h1 className="page-title">Contact</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-         eiusmod tempor incididunt ut labore
-       et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-         in voluptate velit esse cillum dolore eu
-         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-         proident, sunt in culpa qui officia deserunt
-         mollit anim id est laborum.
-       </p>
-      <br />
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-         eiusmod tempor incididunt ut labore
-       et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-         in voluptate velit esse cillum dolore eu
-         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-         proident, sunt in culpa qui officia deserunt
-         mollit anim id est laborum.
-       </p>
+      <h3 style={{ textAlign: 'center' }}>Get in touch with me</h3>
+      <section className="contact-gallery">
+        <div className="icon-box">
+          <GitHub style={iconStyle} />
+          <p>Github</p>
+        </div>
+        <div className="icon-box">
+          <LinkedIn style={iconStyle} />
+          <p>LinkedIn</p>
+        </div>
+        <div className="icon-box">
+          <Email style={iconStyle} />
+          <p>Outlook.com</p>
+          <small>aemiro.allison@outlook.com</small>
+        </div>
+      </section>
     </div>
   </section>
 );
