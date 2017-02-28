@@ -1,5 +1,5 @@
 import webpack from 'webpack';
-import CompressionPlugin from 'compression-webpack-plugin';
+// import CompressionPlugin from 'compression-webpack-plugin';
 
 export default {
   devtool: 'eval-source-map',
@@ -46,12 +46,12 @@ export default {
     new webpack.optimize.AggressiveMergingPlugin(), // Merge chunks
     new webpack.IgnorePlugin(/^\.\/locale$/, [/moment$/]),
     new webpack.NoErrorsPlugin(),
-    new CompressionPlugin({
-      asset: '[path].gz[query]',
-      algorithm: 'gzip',
-      test: /\.js$|\.css$|\.html$/,
-      threshold: 10240,
-      minRatio: 0,
-    }),
+    // new CompressionPlugin({
+    //   asset: '[path].gz[query]',
+    //   algorithm: 'gzip',
+    //   test: /\.js$|\.css$|\.html$/,
+    //   threshold: 10240,
+    //   minRatio: 0,
+    // }),
   ],
 };

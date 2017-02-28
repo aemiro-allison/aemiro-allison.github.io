@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import reactDOM from 'react-dom';
-import { Router, Route, IndexRoute, browserHistory, hashHistory } from 'react-router';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 import Home from './pages/Home';
 import About from './pages/About';
