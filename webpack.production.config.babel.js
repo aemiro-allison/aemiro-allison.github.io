@@ -1,5 +1,4 @@
 import webpack from 'webpack';
-// import CompressionPlugin from 'compression-webpack-plugin';
 
 export default {
   devtool: 'eval-source-map',
@@ -14,9 +13,9 @@ export default {
 
   module: {
     loaders: [
-      { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['react-hot', 'babel'] },
-      { test: /\.css$/, loader: 'style-loader!css-loader' },
-      { test: /\.(png|jpg)$/, loader: 'url-loader' },
+      { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['babel'] },
+      { test: /\.css$/, loader: 'style-loader!css-loader!' },
+      { test: /\.png$|\.jpg$/, loader: 'url-loader?limit=100000' },
     ],
   },
 
@@ -28,6 +27,7 @@ export default {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'),
     }),
+    new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({
       mangle: true,
       compress: {
@@ -36,6 +36,13 @@ export default {
         unsafe: true,
         unsafe_comps: true,
         screw_ie8: true,
+        unused: true,
+        dead_code: true,
+        evaluate: true,
+        conditionals: true,
+        booleans: true,
+        sequences: true,
+        drop_console: true,
       },
       output: {
         comments: false,

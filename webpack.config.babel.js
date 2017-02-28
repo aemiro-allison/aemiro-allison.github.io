@@ -16,7 +16,8 @@ export default {
   module: {
     loaders: [
       { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['react-hot', 'babel'] },
-      { test: /\.css$/, loader: 'style-loader!css-loader!resolve-url-loader' },
+      { test: /\.css$/, loader: 'style-loader!css-loader!' },
+      { test: /\.png$|\.jpg$/, loader: 'url-loader?limit=100000' },
     ],
   },
 

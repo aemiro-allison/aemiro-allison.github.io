@@ -5,7 +5,7 @@ const Home = () => (
     <section className="landing-pg-fullscreen">
       <div className="landing-pg-title">
         <h1>Hi, I&#39;m Aemiro</h1>
-        <h3>I love working on websites</h3>
+        <h3>I enjoy working on websites</h3>
         <img alt="nyc logo" src="assets/images/program-nyc-lightgreen.png" className="landing-pg-image rounded-img" />
       </div>
     </section>

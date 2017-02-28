@@ -26,8 +26,8 @@ class Header extends Component {
   }
 
   render() {
-    const paths = ['/', '/about', '/projects', '/contact'];
-    const pathNames = ['Home', 'About', 'Projects', 'Contact'];
+    const paths = ['/', '/about', '/contact'];
+    const pathNames = ['Home', 'About', 'Contact'];
 
     return (
       <header id="headroom">
