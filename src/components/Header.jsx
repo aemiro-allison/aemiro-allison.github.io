@@ -13,7 +13,6 @@ class Header extends Component {
     this.updatePath = this.updatePath.bind(this);
   }
 
-
   componentWillReceiveProps({ pathName }) {
     if (this.state.path !== pathName) {
       this.updatePath(pathName);
@@ -31,11 +30,10 @@ class Header extends Component {
     const pathNames = ['Home', 'About', 'Projects', 'Contact'];
 
     return (
-      <header className="headroom">
+      <header id="headroom">
         <nav className="navbar">
           <div className="navbar-brand">
-            <Graduate size={23} color={'#fff'} />
-              A.A.A
+            <Graduate size={23} color={'#ddd'} />
           </div>
           <ul>
             {

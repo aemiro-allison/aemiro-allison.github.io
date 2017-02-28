@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server",
-    "build": "webpack --progress -p"
+    "build": "webpack -p --progress",
+    "prod": "webpack -p --progress --config webpack.production.config.babel.js",
+    "minify": "gulp"
   },
   "author": "Aemiro Allison",
   "license": "ISC",
@@ -17,14 +19,18 @@
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.22.0",
     "babel-preset-stage-1": "^6.22.0",
+    "compression-webpack-plugin": "^0.3.2",
     "css-loader": "^0.26.1",
     "eslint": "^3.13.1",
     "eslint-config-airbnb": "^14.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^3.0.2",
     "eslint-plugin-react": "^6.9.0",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.1.1",
     "react-hot-loader": "^1.3.1",
     "style-loader": "^0.13.1",
+    "url-loader": "^0.5.8",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
   },

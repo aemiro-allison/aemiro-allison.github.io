@@ -1,7 +1,7 @@
 import webpack from 'webpack';
 
 export default {
-  devtool: 'eval-source-map',
+  devtool: 'eval',
   entry: [
     'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server',
@@ -9,7 +9,7 @@ export default {
   ],
   output: {
     path: `${__dirname}/build`,
-    publicPath: '/build/',
+    publicPath: './build/',
     filename: 'bundle.js',
   },
 
@@ -17,6 +17,7 @@ export default {
     loaders: [
       { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['react-hot', 'babel'] },
       { test: /\.css$/, loader: 'style-loader!css-loader' },
+      { test: /\.(png|jpg)$/, loader: 'url-loader' },
     ],
   },
 
@@ -27,15 +28,4 @@ export default {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
   ],
-
-  // plugins: process.argv.indexOf('-p') === -1 ? null : [
-  //   new webpack.DefinePlugin({
-  //     'process.env.NODE_ENV': JSON.stringify('production'),
-  //   }),
-  //   new webpack.optimize.UglifyJsPlugin({
-  //     output: {
-  //       comments: false,
-  //     },
-  //   }),
-  // ],
 };

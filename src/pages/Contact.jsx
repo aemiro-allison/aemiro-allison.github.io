@@ -11,22 +11,22 @@ const iconStyle = {
 const Contact = () => (
   <section className="page">
     <div className="container-fluid">
-      <h1 className="page-title">Contact</h1>
-      <h3 style={{ textAlign: 'center' }}>Get in touch with me</h3>
+      <h1 className="page-title">Contact Me</h1>
+      <h3 style={{ textAlign: 'center' }}>Feel free to get in touch with me</h3>
       <section className="contact-gallery">
-        <div className="icon-box">
+        <a className="icon-box" href="http://github.com/aemiro-allison">
           <GitHub style={iconStyle} />
           <p>Github</p>
-        </div>
-        <div className="icon-box">
+        </a>
+        <a className="icon-box" href="http://linkedin.com/in/aemiro-allison">
           <LinkedIn style={iconStyle} />
           <p>LinkedIn</p>
-        </div>
-        <div className="icon-box">
+        </a>
+        <a className="icon-box" href="mailto:aemiro.allison@outlook.com">
           <Email style={iconStyle} />
           <p>Outlook.com</p>
           <small>aemiro.allison@outlook.com</small>
-        </div>
+        </a>
       </section>
     </div>
   </section>
