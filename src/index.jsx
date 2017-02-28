@@ -46,7 +46,7 @@ const routes = (
 reactDOM.render(
   <Router
     onUpdate={() => window.scrollTo(0, 0)}
-    history={hashHistory}
+    history={browserHistory}
     routes={routes}
   />,
   document.getElementById('root'),

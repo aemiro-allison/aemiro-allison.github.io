@@ -20,7 +20,7 @@ html {
 body {
   margin:0;
   background: rgb(#EBE8D6); /* fallback */
-  background-image: url(assets/images/bg.jpg);
+  background-image: url(./../images/discreet-pattern.png);
   background-position: center;
 }
 
@@ -41,7 +41,7 @@ h1,h2,h3,h4,h5,h6 {
   -webkit-font-smoothing: antialiased;
 }
 
-html { font-size: 16px; font-family: 'Open Sans', sans-serif;}
+html { font-size: 16px; font-family: 'Lato', sans-serif;}
 h1 { font-size: 3rem; }
 h2 { font-size: 2.5rem; }
 h3 { font-size: 1.75rem; }
@@ -297,7 +297,7 @@ footer {
 
 /*** 5. Landing Page ***/
 .landing-pg-fullscreen {
-  background-image: url("assets/images/new-york-city.jpg");
+  background-image: url("./../images/new-york-city.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
