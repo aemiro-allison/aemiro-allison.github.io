@@ -207,31 +207,43 @@ footer {
 
 .projects-container {
   min-width: 100%;
-  max-height: 600px;
-  padding: 12px 20% 12px 0;
+  max-height: 800px;
+  background: #f8f8f8;
+  border: 0.075rem solid #f3f3f3;
+  padding: 12px 20% 12px 12px;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
+  border-radius: 12px;
 }
 
 .card {
-  width: 250px;
-  max-height: 500px;
-  min-height: 250px;
+  width: calc(100vh * 0.75);
+  max-height: calc(100vh * 0.75);
+  min-height: calc(100vh * 0.375);
   white-space: normal;
   display: inline-block;
-  border: 1px solid #444;
-  box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.24);
-  background: #333138;
+  box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.19);
+  background: #343139;
   margin-right: 20px;
   border-radius: 4px;
   overflow: hidden;
+  transition: all 0.15s ease-in;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card:first {
+  border: 0.075rem solid #ccc;
 }
 
 .card-image {
-  width: 200px;
-  padding:25px;
-  height: 200px;
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
   overflow: hidden;
 }
 
@@ -242,18 +254,17 @@ footer {
 }
 
 .card-content {
-  border-top: 1px solid #777;
   height: 33.3%;
   padding: 5%;
 }
 
 .card-title {
-  color: #ff0;
+  color: #f3f3f3;
   font-size: 1.3rem;
 }
 
 .card-desc {
-  color: #ccc  ;
+  color: #aaa;
 }
 
 .contact-gallery {
