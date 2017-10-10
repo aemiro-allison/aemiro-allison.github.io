@@ -33,7 +33,9 @@ class Header extends Component {
       <header id="headroom">
         <nav className="navbar">
           <div className="navbar-brand">
-            <Graduate size={23} color={'#ddd'} />
+            <Link to="/">
+              <Graduate size={23} color={'#ddd'} />
+            </Link>
           </div>
           <ul>
             {
