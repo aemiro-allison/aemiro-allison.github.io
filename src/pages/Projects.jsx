@@ -6,18 +6,8 @@ const Projects = () => (
  <div className="container-fluid" style={{ overflow: 'hidden' }}>
     <h1 className="page-title">Projects</h1>
 
-    <h2>Web App</h2>
+    <h2>Web Apps</h2>
     <div className="projects-container">
-      <div className="card">
-        <a href="https://github.com/aemiro-allison/simply-weather-app">
-          <img className="card-image" src="assets/images/simply-weather-app.png" alt="" />
-          <div className="card-content">
-            <h3 className="card-title">Simply Weather App</h3>
-            <p className="card-desc">A simple weather application that allows users to create, view, update and delete the weather for entered locations across the world.</p>
-          </div>
-        </a>
-      </div>
-
       <div className="card">
         <a href="https://git.generalassemb.ly/aemiro-allison/project-2">
           <img className="card-image" src="assets/images/build-a-smoothie.png" alt="Build a Smoothie - landing page screenshot" />
@@ -34,6 +24,16 @@ const Projects = () => (
           <div className="card-content">
             <h3 className="card-title">Nyan Cat Chase</h3>
             <p className="card-desc">This game uses a basic physics engine which allows features such as gravity and in-game collisions etc. to work. The game was made more interactive and lively by utilizing the physics engine mentioned above, along with CSS animations.</p>
+          </div>
+        </a>
+      </div>
+
+      <div className="card">
+        <a href="https://github.com/aemiro-allison/simply-weather-app">
+          <img className="card-image" src="assets/images/simply-weather-app.png" alt="" />
+          <div className="card-content">
+            <h3 className="card-title">Simply Weather App</h3>
+            <p className="card-desc">A simple weather application that allows users to create, view, update and delete the weather for entered locations across the world.</p>
           </div>
         </a>
       </div>

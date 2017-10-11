@@ -22,7 +22,7 @@ const Footer = () => (
         <h4>My Philosophy</h4>
         <blockquote style={{ width: '50%', minWidth: '200px' }}>
           &#34;The end of the day is going to come whether you like it
-          or not. So the question is, Where do you want to be at by
+          or not. So the question is, Where do you want to be at the
           end of the day?&#34;
            <span style={quoteNameStyle}>- Aemiro Allison</span>
         </blockquote>
