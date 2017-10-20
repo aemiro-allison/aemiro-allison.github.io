@@ -223,8 +223,9 @@ footer {
 
 .card {
   width: calc(100vh * 0.75);
-  max-height: calc(100vh * 0.75);
-  min-height: calc(100vh * 0.375);
+  min-height: 400px;
+  height: calc(100vh * 4);
+  max-height: 500px;
   white-space: normal;
   display: inline-block;
   box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.19);
@@ -259,7 +260,7 @@ footer {
 
 .card-content {
   position: relative;
-  height: 33.3%;
+  height: 100%;
   padding: 5%;
 }
 
