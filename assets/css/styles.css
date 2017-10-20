@@ -258,6 +258,7 @@ footer {
 }
 
 .card-content {
+  position: relative;
   height: 33.3%;
   padding: 5%;
 }
@@ -265,6 +266,27 @@ footer {
 .card-title {
   color: #f3f3f3;
   font-size: 1.3rem;
+}
+
+.card-source {
+  cursor: pointer;
+  margin: 3rem 1.5rem 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border:none;
+  color: yellow;
+  transition: all 0.2s ease;
+}
+
+.card-source:hover {
+  color: white;
+}
+
+.card-source:focus {
+  outline-width: 0.1rem;
+  outline-color: yellow;
 }
 
 .card-desc {
