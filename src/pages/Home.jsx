@@ -15,13 +15,13 @@ const Home = () => (
         <p>I am Aemiro Allison, a recent graduate living in Queens, New York.
            With over a year of progrmaming experience, I can deliver
            top quality websites created from concept to a fully functioning website.
-           Just send me any PSD or mock up of what you would like and I will make sure that
-           the finsihed website is 100% to your satifaction.</p>
+           Just send any PSD or mock up of what you would like and I will make sure that
+           the finsihed website is a 100% to your satifaction.</p>
 
         <h3>What kind of Developer am I?</h3>
-        <p>I am a developer who likes to get his hands dirty in creating functional UI&#39;s for
-          websites; also known as a <strong>Front End Developer</strong>. I speceialize in
-          developing websites that look great on all screen sizes ranging from mobile screens to
+        <p>I am a developer who likes to get his hands dirty in creating functional user interfaces for
+          websites; also known as a <strong>Front End Developer</strong>. I specialize in
+          developing websites that look great on all screen sizes ranging from mobile to
           large desktop screens.</p>
 
         <h3>What can you expect from me?</h3>
@@ -29,13 +29,13 @@ const Home = () => (
           project I undertake.</p>
         <ul>
           <li>I take cross <strong>browser compatability</strong> into consideration to make sure
-            that your website looks great on any of the modern browsers.</li>
-          <li>All assets that are used I my projects are compressed to make sure that
-            visitors to your site will be able to download and access your site quickly;
+            that your website looks great on all modern browsers.</li>
+          <li>All assets used in my projects are compressed, to make sure that
+            visitors will be able to download and access your site quickly,
             even on slow internet connections.</li>
-          <li>Alot of time is also invested in making sure that all of the code used to
-            make your website is optimized and performant. So that visitors can enjoy
-            reading through the content of your page without expereincing freezing or lag.</li>
+          <li>Dedicated time is invested in making sure that all of the code used to
+            make your site is optimized and performant. So that visitors can enjoy
+            reading through your content without any distractions.</li>
         </ul>
       </div>
     </section>
