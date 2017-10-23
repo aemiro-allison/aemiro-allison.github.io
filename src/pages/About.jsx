@@ -33,19 +33,21 @@ const About = () => (
          for tackling difficult challenges head on.
       </p>
 
+      <br />
+
       <h3>What I&#39;m Currently Doing</h3>
       <p>
         As of October 17, 2017, I completed a web development immersive program at General Assembly that prepares students
         to enter into the real world of web development. Their curriculum included:
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Javascript/ JQuery / React</li>
-          <li>Node / Express</li>
-          <li>PostgreSQL</li>
-          <li>Ruby / Ruby on Rails</li>
-        </ul>
       </p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript/ JQuery / React</li>
+        <li>Node / Express</li>
+        <li>PostgreSQL</li>
+        <li>Ruby / Ruby on Rails</li>
+      </ul>
     </div>
   </section>
 );
