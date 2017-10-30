@@ -29,7 +29,7 @@ const Projects = () => (
           <div className="card-content">
             <h3 className="card-title">Nyan Cat Chase</h3>
 
-            <button className="card-source" onClick={openNewWindowAtUrl("https://git.generalassemb.ly/aemiro-allison/project-1")}>
+            <button className="card-source" onClick={openNewWindowAtUrl("https://github.com/aemiro-allison/project-1")}>
              <EditIcon style={iconStyle} /> Source
             </button>
 
@@ -40,11 +40,11 @@ const Projects = () => (
 
       <div className="card">
         <div onClick={openNewWindowAtUrl("https://ontrack-productivity-app.herokuapp.com")}>
-          <img className="card-image" src="assets/images/on-track-app.png" alt="Simply weather app - screenshot" />
+          <img className="card-image" src="assets/images/on-track-app.png" alt="Ontrack Productivity App - screenshot" />
           <div className="card-content">
             <h3 className="card-title">OnTrack Productivity App</h3>
 
-            <button className="card-source" onClick={openNewWindowAtUrl("https://git.generalassemb.ly/aemiro-allison/on-track")}>
+            <button className="card-source" onClick={openNewWindowAtUrl("https://github.com/aemiro-allison/project-4")}>
              <EditIcon style={iconStyle} /> Source
             </button>
 
@@ -61,7 +61,7 @@ const Projects = () => (
           <div className="card-content">
             <h3 className="card-title">Build a Smoothie</h3>
 
-            <button className="card-source" onClick={openNewWindowAtUrl("https://git.generalassemb.ly/aemiro-allison/project-2")}>
+            <button className="card-source" onClick={openNewWindowAtUrl("https://github.com/aemiro-allison/project-2")}>
               <EditIcon style={iconStyle} /> Source
             </button>
 

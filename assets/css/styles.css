@@ -211,10 +211,11 @@ footer {
 
 .projects-container {
   min-width: 100%;
-  max-height: 800px;
+  height: calc(100vw / 2 + 100vh / 3);
+  max-height: 480px;
   background: #f8f8f8;
   border: 0.075rem solid #f3f3f3;
-  padding: 12px 20% 12px 12px;
+  padding: 12px 0 12px 12px;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
@@ -222,15 +223,13 @@ footer {
 }
 
 .card {
-  width: calc(100vh * 0.75);
-  min-height: 400px;
-  height: calc(100vh * 4);
-  max-height: 620px;
+  width: calc(100vh * 0.675);
+  height: 100%;
   white-space: normal;
   display: inline-block;
   box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.19);
   background: #343139;
-  margin-right: 20px;
+  margin-right: 12px;
   border-radius: 4px;
   overflow: hidden;
   transition: all 0.15s ease-in;
@@ -260,8 +259,8 @@ footer {
 
 .card-content {
   position: relative;
-  height: 100%;
-  padding: 5%;
+  height: 400px;
+  padding: 2.5% 5%;
 }
 
 .card-title {
@@ -271,7 +270,7 @@ footer {
 
 .card-source {
   cursor: pointer;
-  margin: 3rem 1.5rem 0 0;
+  margin: 7% 7% 0 0;
   position: absolute;
   top: 0;
   right: 0;
