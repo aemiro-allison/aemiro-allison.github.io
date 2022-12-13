@@ -13,7 +13,7 @@ const Home = () => (
       <div className="container">
         <h2 className="page-title">Who am I?</h2>
         <p>I am Aemiro Allison, a recent graduate living in Queens, New York.
-           With over a year of progrmaming experience, I can deliver
+           With over a year of programming experience, I can deliver
            top quality websites created from concept to a fully functioning website.
            Just send any PSD or mock up of what you would like and I will make sure that
            the finsihed website is a 100% to your satifaction.</p>
